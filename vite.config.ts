@@ -1,4 +1,4 @@
-import { vitePlugin as remix } from '@remix-run/dev'
+import { reactRouter } from "@react-router/dev/vite";
 import { sentryVitePlugin } from '@sentry/vite-plugin'
 import { glob } from 'glob'
 import { flatRoutes } from 'remix-flat-routes'
@@ -38,7 +38,7 @@ export default defineConfig({
 		// wait until https://github.com/remix-run/remix/issues/9871 is fixed
 		process.env.NODE_ENV === 'test'
 			? null
-			: remix({
+			: reactRouter({
 					ignoredRouteFiles: ['**/*'],
 					serverModuleFormat: 'esm',
 					future: {
