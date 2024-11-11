@@ -1,8 +1,18 @@
 import { getFormProps, getInputProps, useForm } from '@conform-to/react'
 import { getZodConstraint, parseWithZod } from '@conform-to/zod'
 import { type SEOHandle } from '@nasa-gcn/remix-seo'
-import { json, redirect, type LoaderFunctionArgs, type ActionFunctionArgs } from "react-router";
-import { Form, useActionData, useLoaderData, useNavigation } from "react-router";
+import {
+	json,
+	redirect,
+	type LoaderFunctionArgs,
+	type ActionFunctionArgs,
+} from '@remix-run/node'
+import {
+	Form,
+	useActionData,
+	useLoaderData,
+	useNavigation,
+} from '@remix-run/react'
 import * as QRCode from 'qrcode'
 import { z } from 'zod'
 import { ErrorList, OTPField } from '#app/components/forms.tsx'

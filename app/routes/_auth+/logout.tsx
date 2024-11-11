@@ -1,4 +1,4 @@
-import { redirect, type ActionFunctionArgs } from "react-router";
+import { redirect, type ActionFunctionArgs } from '@remix-run/node'
 import { logout } from '#app/utils/auth.server.ts'
 
 export async function loader() {

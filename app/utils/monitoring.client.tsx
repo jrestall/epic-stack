@@ -1,4 +1,4 @@
-import { useLocation, useMatches } from "react-router";
+import { useLocation, useMatches } from '@remix-run/react'
 import {
 	init as sentryInit,
 	browserTracingIntegration,

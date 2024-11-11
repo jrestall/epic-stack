@@ -1,4 +1,9 @@
-import { type ErrorResponse, isRouteErrorResponse, useParams, useRouteError } from "react-router";
+import {
+	type ErrorResponse,
+	isRouteErrorResponse,
+	useParams,
+	useRouteError,
+} from '@remix-run/react'
 import { captureRemixErrorBoundaryError } from '@sentry/remix'
 import { getErrorMessage } from '#app/utils/misc.tsx'
 
